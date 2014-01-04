@@ -1,0 +1,163 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Natasha and Russell's Wedding Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/device-styles.css">
+        <link rel="icon" href="img/favicon.png">
+
+        <style type="text/css">
+      * { padding:0; margin:0; }
+      #fullpage { bbackground-image: url(../images/lightpaperfibers-trans.png); height:100%; width:100%; }
+    </style>
+    <script type="text/javascript">
+      window.onload = function() {
+        var height = getViewportHeight();
+
+        if(height > 0)
+          document.getElementById("fullpage").style.height = height + "px";
+      }
+
+      function getViewportHeight() {
+        var h = 0;
+
+        if(self.innerHeight)
+          h = window.innerHeight;
+        else if(document.documentElement && document.documentElement.clientHeight)
+          h = document.documentElement.clientHeight;
+        else if(document.body) 
+          h = document.body.clientHeight;
+
+        return h;
+      }
+    </script>
+
+       <script>
+   $(function() {  
+    var pull        = $('#pull');  
+        menu        = $('.navigation ul');  
+        menuHeight  = menu.height();  
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+        menu.slideToggle();  
+    });  
+});</script>
+<script>
+
+   $(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});
+   </script>
+   <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="jquery/jquery.scrollTo.js"></script>
+  <script type="text/javascript" charset="utf-8" src="jquery/jquery.nav.js"></script>-->
+    <!-- [if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <! [endif] -->
+</head>
+
+<body>
+
+<!-- ///////////////// Navigation /////////////////// -->
+
+  <div class="navigation">
+    <ul id="topnav" class="clearfix">
+        <li><a href="about.html">about us</a></li>
+        <li><a href="wedding.html">wedding details</a></li>
+        <li><a href="guest-info.html">guest info</a></li>
+        <li><a href="registry.html">our registries</a></li>
+        <li><a href="rsvp.html">rsvp</a></li>
+        <li><a href="contact.html">contact us</a></li>
+      </ul>
+      <a href="#" id="pull">Menu</a>
+  </div> <!-- navigation -->
+
+<!-- ///////////////// End Navigation /////////////////// -->
+
+ <div class="container">
+
+<!-- ///////////////// About Natasha and Russell /////////////////-->
+    <div id="natasha_and_russell" class="border">
+
+      <div class="img_container">
+        <div class="image_small">
+          <img src='img/natasha.jpg' alt="Natasha">
+        </div> <!-- image_small -->
+
+        <div class="image_small" id="russ_image">
+          <img src='img/russell-cropped.png' alt="Russell">
+        </div><!-- image_small -->
+      </div> <!-- img_container -->
+
+      <div class="text_container">
+        <div class="textbox">
+          <h1>NATASHA</h1><br>
+          <p>Natasha grew up in Corvallis, OR (Go Beavers!) with her parents Taryn and Victor, and her two younger sisters Ashley and Charissa. She graduated from Oregon State University with a bachelor of science in Chemistry, and after graduation joined Russell in San Francisco where she is now pursuing a career in technical writing.</p>
+        </div> <!-- textbox -->
+
+        <div class="textbox">
+          <h1>RUSSELL</h1><br>
+          <p>Russell grew up in Anchorage, AK with his parents Molly and Bret, and his two younger siblings Don and Celia. He graduated from Oregon State University with a bachelor of science in Computer Science. After graduation he moved to San Francisco to continue working at a tech company.</p>
+        </div> <!-- textbox -->
+      </div> <!-- text_container -->
+    </div> <!-- natasha_and_russell -->
+
+  <!-- ///////////////// End About N and R /////////////////// -->
+
+  <!-- ///////////////// How we Met /////////////////// -->
+    <div id="how_we_met" class="clearfix border">
+
+      <div class="text_container">
+        <div class="textbox">
+          <h1>HOW WE MET</h1><br>
+
+          <p>Russell and Natasha met through mutual friends at Oregon State University where they were both students. The first time they met, Russell told Natasha she was the most beautiful person he had ever known, and Natasha knew immediately that she liked him.</p>
+        </div> <!-- textbox -->
+
+        <div class="image">
+          <img src='img/russandnat.jpg' alt="Russell and Natasha">
+        </div> <!-- image -->
+      </div> <!-- text_container -->
+    </div> <!-- how_we_met -->
+
+  <!-- ///////////////// End How We Met /////////////////// -->
+
+  <!-- ///////////////// Our Proposal /////////////////// -->
+    <div id="proposal" class="clearfix border">
+      
+      <div class="text_container">
+        <div class="textbox">
+          <h1>THE PROPOSAL</h1><br> 
+
+          <h2>When:</h2> <p>January 12 2013</p><br>
+          <h2>How:</h2> <p>Russell asked Natasha to go for a hike over on the Marin side of the Golden Gate Bridge. They walked across the bridge, and hiked up to Battery Spencer. Russell proposed on Battery Spencer on a beautiful sunny day in front of the Golden Gate Bridge.</p>
+        </div> <!-- textbox -->
+
+      <div class="image">
+        <img src='img/proposal.JPG' alt="Proposal">
+      </div> <!-- image -->
+    </div> <!-- text_container -->
+
+  </div><!--proposal-->
+
+<!-- ///////////////// End Our Proposal /////////////////// -->
+
+
+<!--<script type="text/javascript">
+$(document).ready(function(){
+  $('#topnav').onePageNav({
+    currentClass: 'current',
+      scrollOffset: 150
+  });
+});
+</script>-->
+  </div> <!-- container -->
+</body>
+</html>

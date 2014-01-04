@@ -1,0 +1,145 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Natasha and Russell's Wedding Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/device-styles.css">
+        <link rel="icon" href="img/favicon.png">
+
+        <style type="text/css">
+      * { padding:0; margin:0; }
+      #fullpage { bbackground-image: url(../images/lightpaperfibers-trans.png); height:100%; width:100%; }
+    </style>
+    <script type="text/javascript">
+      window.onload = function() {
+        var height = getViewportHeight();
+
+        if(height > 0)
+          document.getElementById("fullpage").style.height = height + "px";
+      }
+
+      function getViewportHeight() {
+        var h = 0;
+
+        if(self.innerHeight)
+          h = window.innerHeight;
+        else if(document.documentElement && document.documentElement.clientHeight)
+          h = document.documentElement.clientHeight;
+        else if(document.body) 
+          h = document.body.clientHeight;
+
+        return h;
+      }
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script>
+   $(function() {  
+    var pull        = $('#pull');  
+        menu        = $('.navigation ul');  
+        menuHeight  = menu.height();  
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+        menu.slideToggle();  
+    });  
+});
+  </script>
+  <script>
+
+   $(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});
+   </script>
+
+    <!-- [if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <! [endif] -->
+</head>
+
+<body>
+
+<!-- ///////////////// Navigation /////////////////// -->
+
+  <div class="navigation">
+      <ul id="topnav" class="clearfix">
+        <li><a href="about.html">about us</a></li>
+        <li><a href="wedding.html">wedding details</a></li>
+        <li><a href="guest-info.html">guest info</a></li>
+        <li><a href="registry.html">our registries</a></li>
+        <li><a href="rsvp.html">rsvp</a></li>
+        <li><a href="contact.html">contact us</a></li>
+      </ul>
+      <a href="#" id="pull">Menu</a>
+  </div><!-- navigation -->
+
+<!-- ///////////////// End Navigation /////////////////// -->
+
+ 
+<!-- ///////////////// Image  /////////////////// --> 
+   
+   <div id="img_weddingpage">
+      <img src="img/Selvey-Haering-110.JPG" alt="Natasha and Russell">
+    </div><!-- img_weddingpage -->
+
+<!-- ///////////////// End Image  /////////////////// -->
+ <div class="container">
+
+<!-- ///////////////// Gifts /////////////////// -->
+    <div id="gifts" class="border">
+
+      <div class="text_container">
+
+        <div class="textbox_small">
+          <h1>GIFTS</h1>
+        </div><!-- textbox_small -->
+
+        <div class="textbox">
+          <p>Don't lug it to Alaska! No one wants to be carrying around a bunch of gifts on this trip. <br><br>
+
+          If you are not purchasing off the registry, please send your gift to our apartment in San Francisco (<a href="contact.html">contact us</a> if you need the address!).<br><br>
+
+          If you are looking for gift card ideas, we are fans of shopping at <a href="http://www.amazon.com/b?ie=UTF8&node=3063530011" target="_blank">Amazon.com</a>, <a href="http://www.rei.com/gift-card.html" target="_blank">REI</a>, <a href="http://www.safeway.com/ShopStores/Gift-Cards-Landing.page" target="_blank">Safeway</a>, or <a href="http://www.wholefoodsmarket.com/buy-gift-cards" target="_blank">Whole Foods</a>.</p>
+        </div><!-- textbox -->
+      </div><!-- text_container -->
+    </div><!-- gifts border -->
+
+<!-- ///////////////// End Gifts /////////////////// -->
+
+<!-- ///////////////// Registries /////////////////// -->
+    <div id="registry" class="border">
+
+      <div class="text_container">
+
+        <div class="textbox_small">
+          <h1>REGISTRIES</h1>
+        </div><!-- textbox_small -->
+
+        <div class="textbox">
+          <h2>We are registered at:</h2>
+          <a href="http://www1.macys.com/registry/wedding/guest/?registryId=6024408" target="_blank"><img src="img/macys.jpg" alt="macys"></a><br><br>
+          <a href="http://www.amazon.com/registry/wedding/2SYNDHQLDTMY9" target="_blank"><img src="img/amazonwedding.jpg" width="270" alt="amazon"></a>
+        </div><!-- textbox -->
+      </div><!-- text_container -->
+    </div><!-- registry border -->
+
+<!-- ///////////////// End Registries /////////////////// -->
+
+<!--<script type="text/javascript">
+$(document).ready(function(){
+  $('#topnav').onePageNav({
+    currentClass: 'current',
+      scrollOffset: 150
+  });
+});
+</script>-->
+  </div> <!-- container -->
+</body>
+</html>

@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Natasha and Russell's Wedding Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/device-styles.css">
+        <link rel="icon" href="img/favicon.png">
+
+        <style type="text/css">
+      * { padding:0; margin:0; }
+      #fullpage { bbackground-image: url(../images/lightpaperfibers-trans.png); height:100%; width:100%; }
+    </style>
+    <script type="text/javascript">
+      window.onload = function() {
+        var height = getViewportHeight();
+
+        if(height > 0)
+          document.getElementById("fullpage").style.height = height + "px";
+      }
+
+      function getViewportHeight() {
+        var h = 0;
+
+        if(self.innerHeight)
+          h = window.innerHeight;
+        else if(document.documentElement && document.documentElement.clientHeight)
+          h = document.documentElement.clientHeight;
+        else if(document.body) 
+          h = document.body.clientHeight;
+
+        return h;
+      }
+    </script>
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="jquery/jquery.scrollTo.js"></script>
+  <script type="text/javascript" charset="utf-8" src="jquery/jquery.nav.js"></script>-->
+    <!-- [if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <! [endif] -->
+    </head>
+
+    <body>
+        <div class="navigation">
+            <ul id="topnav">
+                <li><a href="about.html">about us</a></li>
+                <li><a href="wedding.html">wedding details</a></li>
+                <li><a href="guest-info.html">guest info</a></li>
+                <li><a href="registry.html">our registries</a></li>
+                <li><a href="rsvp.html">rsvp</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="home_image">
+            <img src="img/Selvey-Haering-36.png" alt="Picture of Russell and Natasha">
+        </div>
+    <!--Body content-->
+
+<!--<script type="text/javascript">
+$(document).ready(function(){
+  $('#topnav').onePageNav({
+    currentClass: 'current',
+      scrollOffset: 150
+  });
+});
+</script>-->
+    </body>
+    </html>

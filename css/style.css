@@ -1,0 +1,278 @@
+/******************** Web Fonts ***********************/
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+@import url(http://fonts.googleapis.com/css?family=Kameron);
+
+/********************* Universal *********************/
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(../img/white_wall_hash.png);
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(32, 138, 77);
+}
+
+a:hover {
+  color: black;
+}
+
+ul, li {
+  list-style: none;
+}
+
+ul {
+  margin: 10px 30px;
+}
+
+.textbox li {
+  list-style-type: disc;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Kameron', serif;
+}
+
+h2, h3 {
+  margin-bottom: 5px;
+}
+
+p {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+iframe {
+  border: 10px solid #BDC3C7;
+
+}
+
+iframe a {
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: gray;
+}
+
+
+/********************* Fixes *********************/
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+/********************* Containers *********************/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.img_container, .text_container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.text_container {
+  margin-bottom: 50px;
+}
+
+
+.image {
+  height: 300px;
+  width: 450px;
+  margin-bottom: 50px;
+
+}
+
+.image_small {
+  height: 350px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.image img {
+  width: 430px;
+  height: 330px;
+}
+
+.image_small img {
+  width: 100%;
+}
+
+.textbox_small {
+  width: 300px;
+}
+
+.textbox {
+  width: 410px;
+  margin: 10px 10px 50px 10px;
+  padding: 5px;
+}
+
+/********************* Navigation *********************/
+.navigation a#pull {  
+    display: none;  
+}
+
+.navigation {  
+  display: block;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  background: rgba(32, 138, 77, 0.75);
+  z-index: 9999;
+}
+
+#topnav {  
+  max-width: 900px;
+  min-width: 380px;
+  margin: 0 auto;
+  clear: both;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+}
+
+#topnav li a { 
+  display: block;
+  color: #BDC3C7;
+  float: left;
+  font-size: 1.3em;
+  line-height: 70px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#topnav li a:hover { 
+  color: #95A5A6;
+  background: rgba(255,255,255,0.65);
+}
+
+#topnav li.current a { 
+  background: rgba(255,255,255,0.7);
+  color: white;
+  border-bottom: 4px solid #ECF0F1;
+}
+
+#menu-icon {
+  display: none;
+}
+
+/********************* Home Page *********************/
+
+.home_image img {
+  width: 100%;
+}
+
+/********************* About Page ********************/
+
+
+.border {
+  border-bottom: 1px solid gray;
+  margin-bottom: 50px;
+}
+
+.img_container img, .text_container img {
+  border: 10px solid #BDC3C7;
+}
+
+
+#how_we_met.textbox, #proposal.textbox {
+  width: 400px;
+  float: left;
+  display: block;
+}
+
+#how_we_met.image, #proposal.image {
+  float: right;
+  display: block;
+}
+
+#russ_image {
+  position: relative;
+  right: 130px;
+  bottom: 15px;
+}
+
+/********************* Wedding Page ********************/
+
+#img_weddingpage img {
+  width: 100%;
+}
+
+
+#wedding_party .text_container {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.textbox_left, .textbox_title {
+  width: 300px;
+  float: left;
+  margin: 10px;
+}
+
+.textbox_mid {
+  width: 300px;
+  float: left;
+  margin: 10px;
+}
+
+.textbox_right {
+  width: 300px;
+  float: right;
+  margin: 10px;
+}
+
+#wedding_party img {
+  border: 5px solid #BDC3C7;
+  margin: 10px 5px;
+}
+
+
+/******************** Guest Info ***********************/
+
+#where_to_stay li a, #things_to_do li a, #contact a {
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: rgba(32, 138, 77, 0.75);
+}
+
+#where_to_stay li a:hover, #things_to_do li a:hover {
+  color: black;
+}
+
+#see_alaska h1 {
+  margin-bottom: 15px;
+}

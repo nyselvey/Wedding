@@ -1,0 +1,267 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Natasha and Russell's Wedding Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/device-styles.css">
+        <link rel="icon" href="img/favicon.png">
+
+        <style type="text/css">
+      * { padding:0; margin:0; }
+      #fullpage { bbackground-image: url(../images/lightpaperfibers-trans.png); height:100%; width:100%; }
+    </style>
+    
+    <script type="text/javascript">
+      window.onload = function() {
+        var height = getViewportHeight();
+
+        if(height > 0)
+          document.getElementById("fullpage").style.height = height + "px";
+      }
+
+      function getViewportHeight() {
+        var h = 0;
+
+        if(self.innerHeight)
+          h = window.innerHeight;
+        else if(document.documentElement && document.documentElement.clientHeight)
+          h = document.documentElement.clientHeight;
+        else if(document.body) 
+          h = document.body.clientHeight;
+
+        return h;
+      }
+    </script>
+
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   
+   <script>
+     $(function() {  
+      var pull        = $('#pull');  
+          menu        = $('.navigation ul');  
+          menuHeight  = menu.height();  
+    
+      $(pull).on('click', function(e) {  
+          e.preventDefault();  
+          menu.slideToggle();  
+      });  
+  });
+  </script>
+  <script>
+
+     $(window).resize(function(){  
+      var w = $(window).width();  
+      if(w > 320 && menu.is(':hidden')) {  
+          menu.removeAttr('style');  
+      }  
+  });
+  </script>
+  
+    <!-- [if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <! [endif] -->
+</head>
+
+<body>
+
+<!-- ///////////////// Navigation /////////////////// -->
+  <div class="navigation">
+      <ul id="topnav" class="clearfix">
+        <li><a href="about.html">about us</a></li>
+        <li><a href="wedding.html">wedding details</a></li>
+        <li><a href="guest-info.html">guest info</a></li>
+        <li><a href="registry.html">our registries</a></li>
+        <li><a href="rsvp.html">rsvp</a></li>
+        <li><a href="contact.html">contact us</a></li>
+      </ul>
+      <a href="#" id="pull">Menu</a>
+  </div> <!-- navigation -->
+
+<!-- ///////////////// End Navigation /////////////////// -->
+
+ 
+<!-- ///////////////// Image of CCM /////////////////// --> 
+   
+   <div id="img_weddingpage">
+      <img src="img/Selvey-Haering-125.JPG" alt="Natasha and Russell">
+    </div> <!-- img_weddingpage -->
+
+<!-- ///////////////// End Image of CCM /////////////////// -->
+ <div class="container">
+<!-- ///////////////// Where and When /////////////////// -->
+    <div id="where_when" class="border">
+
+      <div class="text_container">
+
+        <div class="textbox">
+          <h1>WEDDING &amp; RECEPTION</h1><br>
+          <h2>Location</h2><br>
+          <p>The wedding and reception will take place at the Crow Creek Mine in Girdwood, AK on July 12, 2014 at 4:30 pm.<br><br>
+          
+          The Crow Creek Mine<br>
+          601 Crow Creek Rd<br>
+          Girdwood, AK 99587<br><br>
+
+          We kindly request that our event remain adults only.<br><br>
+
+          Crow Creek Mine is a family owned and operated Historical and Recreational Gold Mine. Nestled in a very beautiful mountain setting, Crow Creek Mine offers the oldest buildings in the Anchorage area, as well as some of the most popular recreational gold mining in all of Alaska.</p><br>
+
+          <h2>Driving Directions</h2><br>
+          <p>From Anchorage:<br><br>
+           Drive south, 35 miles on the Seward Highway to Girdwood (Alyeska). Take a left at the gas station / Alyeska Highway for Girdwood. Continue on Alyeska Highway for 1.9 miles and just before the bridge crossing you come to Crow Creek Road on your left. Follow Crow Creek Road for 2.7 miles (becomes gravel road) until you come to the Crow Creek Mine (there will be a big sign), take a right and drive down to their parking lot.</p>
+        </div> <!-- textbox -->
+
+        <div class="textbox">
+          <iframe width="380" height="450" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Crow+Creek+Historic+Gold+Mine,+601+Crow+Creek+Rd,+Girdwood,+AK&amp;aq=0&amp;oq=crow+creek+&amp;sll=37.7577,-122.4376&amp;sspn=0.159603,0.346413&amp;ie=UTF8&amp;hq=Crow+Creek+Historic+Gold+Mine,+601+Crow+Creek+Rd,+Girdwood,+AK&amp;t=m&amp;ll=60.986402,-149.106458&amp;spn=0.010824,0.032015&amp;output=embed"></iframe>
+
+          <p><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Crow+Creek+Historic+Gold+Mine,+601+Crow+Creek+Rd,+Girdwood,+AK&amp;aq=0&amp;oq=crow+creek+&amp;sll=37.7577,-122.4376&amp;sspn=0.159603,0.346413&amp;ie=UTF8&amp;hq=Crow+Creek+Historic+Gold+Mine,+601+Crow+Creek+Rd,+Girdwood,+AK&amp;t=m&amp;ll=60.986402,-149.106458&amp;spn=0.010824,0.032015" style="color:rgba(32, 138, 77, 0.75);text-align:left;font-size:1.3em;">View Map</a></p>
+        </div> <!-- textbox -->
+
+      </div> <!-- text_container -->
+    </div> <!-- where_when -->
+
+<!-- ///////////////// End Where and When /////////////////// -->
+
+<!-- ///////////////// Additional Info ///////////////////// -->
+  <div id="add_info" class="border">
+    
+    <div class="text_container">
+      <div class="textbox">
+        <h1>ADDITIONAL INFO</h1><br>
+        <h2>Attire</h2><br>
+        <p>We want our guests to have a good time, without worrying too much about what you wear. Please dress to your preference and comfort.<br><br>
+
+        Keep in mind that summer in Alaska is a bit cooler then what you may be used to. Be prepared for temperatures between 50 - 60 F, possible rain, and a lot of mosquitos. We will be providing shelter and heaters at the reception, but please make sure you will be comfortable.</p><br><br>
+
+        <h2>Gifts</h2>
+        <p>We are traveling to Alaska (and you might be too!). We are happy to receive your thoughtful gifts, but please direct them to our apartment or registry, details on our <a href="registry.html">registry</a> page.</p>
+      </div> <!--textbox -->
+
+      <div class="image">
+        <img src="img/IMG_0097.JPG" alt="Alaska">
+      </div> <!-- image -->
+
+    </div> <!-- text_container -->
+  </div> <!-- add_info -->
+
+<!-- ///////////////// End Additional Info //////////////////// -->
+
+<!-- ///////////////// Wedding Party /////////////////// -->
+  <div id="wedding_party" class="border">
+    <!--<div class="text_container">
+      
+      <div class="textbox_left">
+        <h1>WEDDING PARTY</h1>
+      </div>  textbox 
+
+      <div class="textbox_mid image_small">
+        <h2>Bridesmaids</h2>
+        <h3>Chelsea Parker</h3> <h4>(Maid of Honor)</h4>
+        <img src="img/chelsea2.jpg" alt="Chelsea">
+      </div> textbox image_small 
+
+      <div class="textbox_right image_small">
+        <h2>Groomsmen</h2>
+        <h3>Don Haering</h3> <h4>(Best Man)</h4>
+        <img src="img/don.jpg" alt="Don">
+      </div>  textbox image_small
+
+    </div>  text_container -->
+
+    <div class="text_container">
+      <div class="textbox_title">
+        <h1>WEDDING PARTY</h1>
+      </div>
+
+      <div class="textbox_mid title">
+        <h2>Bridesmaids</h2>
+      </div><!-- textbox_mid -->
+
+      <div class="textbox_right title">
+        <h2>Groomsmen</h2>
+      </div><!-- textbox_right -->
+    </div><!-- text_container -->
+
+  <div class="text_container">
+    <div class="textbox_left">
+    </div>
+
+    <div class="textbox_mid image_small">
+      <h3>Chelsea Parker</h3> <h4>(Maid of Honor)</h4>
+      <img src="img/chelsea2.jpg" alt="Chelsea">
+    </div>
+
+    <div class="textbox_right image_small">
+      <h3>Don Haering</h3> <h4>(Best Man)</h4>
+      <img src="img/don.jpg" alt="Don">
+    </div>
+
+  </div>
+
+    <div class="text_container">
+
+      <div class="textbox_left">
+      </div> <!-- textbox -->
+
+      <div class="textbox_mid image_small">
+        <h3>Ashley Selvey</h3>
+        <img src="img/ashley.jpg" alt="Ashley">
+      </div> <!-- textbox image_small -->
+
+      <div class="textbox_right image_small">
+        <h3>Anson Moxness</h3>
+        <img src="img/anson2.jpg" alt="Anson">
+      </div> <!-- textbox image_small -->
+    </div><!-- text_container -->
+
+    <div class="text_container">
+
+      <div class="textbox_left">
+      </div> <!-- textbox -->
+
+      <div class="textbox_mid image_small">
+        <h3>Charissa Selvey</h3>
+        <img src="img/charissa2.jpg" alt="Charissa">
+      </div> <!-- textbox image_small -->
+
+      <div class="textbox_right image_small">
+        <h3>Paul Querna</h3>
+        <img src="img/paul.jpg" alt="Paul">
+      </div> <!-- textbox image_small -->
+    </div><!-- text_container -->
+
+    <div class="text_container">
+
+      <div class="textbox_left">
+      </div> <!-- textbox -->
+
+      <div class="textbox_mid image_small">
+        <h3>Celia Haering</h3>
+        <img src="img/celia.jpg" alt="Celia">
+      </div> <!-- textbox image_small -->
+
+      <div class="textbox_right image_small">
+        <h3>Robert Chiniquy</h3>
+        <img src="img/robert2.jpg" alt="Robert">
+      </div> <!-- textbox image_small -->
+    </div><!-- text_container -->
+
+
+  </div> <!-- wedding_party -->
+
+<!-- ///////////////// End Wedding Party /////////////////// -->
+
+<!--<script type="text/javascript">
+$(document).ready(function(){
+  $('#topnav').onePageNav({
+    currentClass: 'current',
+      scrollOffset: 150
+  });
+});
+</script>-->
+  </div> <!-- container -->
+</body>
+</html>

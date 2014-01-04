@@ -1,0 +1,216 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Natasha and Russell's Wedding Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/device-styles.css">
+        <link rel="icon" href="img/favicon.png">
+
+        <style type="text/css">
+      * { padding:0; margin:0; }
+      #fullpage { bbackground-image: url(../images/lightpaperfibers-trans.png); height:100%; width:100%; }
+    </style>
+    <script type="text/javascript">
+      window.onload = function() {
+        var height = getViewportHeight();
+
+        if(height > 0)
+          document.getElementById("fullpage").style.height = height + "px";
+      }
+
+      function getViewportHeight() {
+        var h = 0;
+
+        if(self.innerHeight)
+          h = window.innerHeight;
+        else if(document.documentElement && document.documentElement.clientHeight)
+          h = document.documentElement.clientHeight;
+        else if(document.body) 
+          h = document.body.clientHeight;
+
+        return h;
+      }
+    </script>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+       <script>
+   $(function() {  
+    var pull        = $('#pull');  
+        menu        = $('.navigation ul');  
+        menuHeight  = menu.height();  
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+        menu.slideToggle();  
+    });  
+});
+   </script>
+  <script>
+
+   $(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});
+   </script>
+  
+    <!-- [if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <! [endif] -->
+</head>
+
+<body>
+
+<!-- ///////////////// Navigation /////////////////// -->
+
+  <div class="navigation">
+    <ul id="topnav" class="clearfix">
+        <li><a href="about.html">about us</a></li>
+        <li><a href="wedding.html">wedding details</a></li>
+        <li><a href="guest-info.html">guest info</a></li>
+        <li><a href="registry.html">our registries</a></li>
+        <li><a href="rsvp.html">rsvp</a></li>
+        <li><a href="contact.html">contact us</a></li>
+      </ul>
+      <a href="#" id="pull">Menu</a>
+  </div> <!-- navigation -->
+
+<!-- ///////////////// End Navigation /////////////////// -->
+
+
+ <div class="container">
+<!-- ///////////////// Where to Stay /////////////////// -->
+    <div id="where_to_stay" class="border">
+
+      <div class="text_container">
+
+        <div class="textbox_small">
+          <h1>WHERE TO STAY</h1>
+        </div> <!-- textbox_small -->
+
+        <div class="textbox">
+          <h2>Accomodations</h2>
+            <p>Since we anticpate guests will be exploring the great state of Alaska during the wedding week, we have not reserved blocks of rooms at any hotel.<br><br> 
+
+            If you plan to stay in Anchorage for a few nights at the beginning of your stay, we recommend being close to the Airport or Downtown Anchorage -- those will be the most convenient locations for most activities. <br><br> 
+
+            The wedding itself will be held at Girdwood's Crow Creek Mine. For the days leading up to the wedding, most activities will take place in Girdwood. The town has a variety of lodging options including house rentals, condos, and a hotel. <br><br> 
+
+            Anchorage will have more to provide in terms of city activities (museums, restaurants, shopping, parks) but other locations will have more outdoor activities and sights, so choose your accomodations based on what you hope to do on this trip! We highly encourage you to explore other cities in Alaska such as Seward, Homer or Talkeetna.</p>
+        </div> <!-- textbox -->
+
+        <div class="textbox">
+          <h2>Accomodations Resources</h2>
+            <ul>
+              <li><a href="http://www.thealtahouse.com/" target="_blank">Alta House Vacation Rentals</a></li>
+              <li><a href="http://www.vrbo.com/" target="_blank">Vacation Rentals by Owner</a></li>
+              <li><a href="http://www.alyeskaaccommodations.com/" target="_blank">Alyeska Accomodations</a></li>
+              <li><a href="http://alyeskagirdwoodaccommodations.net/" target="_blank">Alyeska / Girdwood Accomodations Association</a></li>
+              <li><a href="http://www.homeaway.com/search/keywords:Girdwood%2C+Alaska" target="_blank">Home Away</a></li>
+              <li><a href="http://www.alyeskaresort.com/" target="_blank" title="Alyeska Resort">Alyeska Resort</a></li>
+              <li><a href="http://www.tripadvisor.com/Hotels-g60880-Anchorage_Alaska-Hotels.html" target="_blank"> Trip Advisor - Anchorage</a></li>
+              <li><a href="http://www.tripadvisor.com/Hotels-g31000-Girdwood_Alaska-Hotels.html" target="_blank">Trip Advisor - Girdwood</a></li>
+            </ul>
+        </div><!-- textbox -->
+      </div><!-- text_container -->
+    </div><!-- where_to_stay -->
+
+<!-- ///////////////// End Where to Stay /////////////////// -->
+
+<!-- ///////////////// Things to Do ///////////////////// -->
+  <div id="things_to_do" class="border">
+    
+    <div class="text_container">
+      <div class="textbox_small">
+        <h1>THINGS <br>TO DO</h1>
+      </div><!-- textbox_small -->
+
+      <div class="textbox">
+        <h3>Museums in Anchorage</h3>
+          <ul>
+            <li><a href="http://www.anchoragemuseum.org/" target="_blank">Anchorage Museum at Rasmuson</a></li>
+            <li><a href="http://www.alaskanative.net/" target="_blank">Alaska Native Heritage Center</a></li>
+            <li><a href="http://www.alaskaairmuseum.org/" target="_blank">Alaska Aviation Museum</a></li>
+            <li><a href="http://www.alaskazoo.org/" target="_blank">The Alaska Zoo</a></li>
+          </ul>
+        <h3>Restaurants in Anchorage</h3>
+          <ul>
+            <li><a href="http://moosestooth.net/" target="_blank">Moose's Tooth Pub &amp; Pizzeria</a></li>
+            <li><a href="http://beartoothgrill.freshalepubs.com/" target="_blank">Bear Tooth Theatre Pub &amp; Grill</a></li>
+            <li><a href="http://www.glacierbrewhouse.com/" target="_blank">Glacier Brewhouse</a></li>
+            <li><a href="http://www.orsoalaska.com/" target="_blank">Orso</a></li>
+            <li><a href="http://simonandseaforts.com/" target="_blank">Simon &amp; Seafort's</a></li>
+            <li><a href="http://fireislandbread.com/" target="_blank">Fire Island Rustic Bakeshop</a></li>
+            <li><a href="http://www.humpys.com/" target="_blank">Humpy's Great Alaskan Alehouse</a></li>
+            <li><a href="http://gwenniesrestaurant.com/" target="_blank">Gwennies Old Alaskan Restaurant</a></li>
+          </ul>
+        <h3>Hiking</h3>
+          <ul>
+            <li><a href="http://www.fs.usda.gov/chugach/" target="_blank">Chugach National Forest</a></li>
+            <li><a href="http://anchoragecoastaltrail.com/" target="_blank">Tony Knowles Coastal Trail</a></li>
+            <li><a href="http://dnr.alaska.gov/parks/aspunits/chugach/glenalps.htm" target="_blank">Flattop / Glen Alps</a></li>
+            <li><a href="http://dnr.alaska.gov/parks/aspunits/matsu/matsuglsrs.htm" target="_blank">Matanuska Glacier State Recreational Site</a></li>
+          </ul>
+      </div> <!-- textbox -->
+
+      <div class="textbox">
+        <h3>Tours</h3>
+          <ul>
+            <li><a href="http://www.salmonberrytours.com/" target="_blank">Salmon Berry Tours </a> (Anchorage)</li>
+            <li><a href="http://group3aviation.com/" target="_blank">Group 3 Aviation Flightseeing Tours</a> (Anchorage)</li>
+            <li><a href="http://www.kenaifjords.com/" target="_blank">Kenai Fjords Tours</a> (Seward)</li>
+            <li><a href="http://www.sunnycove.com/" target="_blank">Sunny Cove Sea Kayaking</a> (Seward)</li>
+            <li><a href="http://alaskaseakayakers.com/" target="_blank"> Alaska Sea Kayaking Tours</a> (Whittier)</li>
+            <li><a href="http://www.ididaride.com/" target="_blank"> Ididaride - Sled Dog Tours/Rides</a> (Seward/Girdwood for Glacier rides)</li>
+            <li><a href="http://www.micaguides.com/index.html" target="_blank">Alaska Glacial Tours and Ice Climbing</a> (Sutton)</li>
+          </ul>
+        <h3> Fishing Charters</h3>
+          <ul>
+            <li><a href="http://captpete.com/" target="_blank">Captain Petes Fishing Charters </a>(Homer)</li>
+            <li><a href="http://alaskafishing.com/guidesc.html" target="_blank">Fishing out of Cook Inlet and Katchemak Bay</a> (Homer)</li>
+            <li><a href="http://www.thefishhouse.net/" target="_blank">The Fish House Fishing Charters</a> (Seward)</li>
+          </ul>
+        <h3>Other Fun Things </h3>
+          <ul>
+            <li><a href="http://www.theulufactory.com/" target="_blank">The Ulu Factory</a></li>
+            <li><a href="http://www.alaskawildberryproducts.com/" target="_blank">Alaska Wild Berry Products</a></li>
+            <li><a href="http://www.alaskasausage.com/" target="_blank">Alaska Sausage and Seafood</a></li>
+          </ul>        
+      </div><!-- textbox -->
+    </div><!-- text_container -->
+  </div><!-- things_to_do -->
+
+<!-- ///////////////// End Things to Do //////////////////// -->
+
+<!-- ///////////////// See Alaska /////////////////// -->
+  <div id="see_alaska" class="border">
+    <div class="text_container">
+      <div class="textbox">
+        <h1>SEE ALASKA!</h1>
+          <p>Anchorage is only a tiny slice of Alaska. We highly encourage you to take this opportunity to explore this great state. Go on a fishing charter or a glacier cruise out of Seward or Homer. Drive over to Prince William Sound. Check out Kenai Fjord National Park or Resurrection bay. Try out a flightseeing tour. Go hiking, kayaking or biking just about anywhere. If you are feeling very adventerous, go to Denali Park or take an Alaskan cruise. If you need more ideas or recommendations check out <a href="http://www.travelalaska.com/" target="_blank" title="Travel Alaska">Travel Alaska</a> or just ask us!</p>
+      </div><!-- textbox -->
+
+      <div class="image">
+        <img src="img/cove3.jpg" alt="Halibut Cove">
+      </div><!-- image -->
+    </div><!--text_container-->
+  </div><!-- see_alaska -->
+
+<!-- ///////////////// End See Alaska /////////////////// -->
+
+<!--<script type="text/javascript">
+$(document).ready(function(){
+  $('#topnav').onePageNav({
+    currentClass: 'current',
+      scrollOffset: 150
+  });
+});
+</script>-->
+  </div> <!-- container -->
+</body>
+</html>

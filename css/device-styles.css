@@ -1,0 +1,227 @@
+@media only screen and (max-width: 1024px) {
+	.image {
+	  height: 300px;
+	  width: 350px;
+	}
+
+	.image img {
+	  width: 330px;
+	  height: 230px;
+	}
+
+	.textbox {
+		width: 300px;
+	}
+
+	.image_small img{
+		width: 250px;
+	}
+
+	#russ_image {
+		margin-left: 450px;
+	}
+
+	.textbox_left {
+		display: none;
+	}
+
+	.title {
+		display: none;
+	}
+
+	#where_when iframe {
+		width: 300px;
+	}
+}
+
+@media only screen and (max-width: 853px) {
+	#topnav {  
+	  -webkit-justify-content: center;
+	  -ms-justify-content: center;
+	  -moz-justify-content: center;
+	  justify-content: center;
+	}
+
+	#topnav li {
+		margin: 0 30px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#topnav li {
+		margin: 0 20px;
+	}
+
+	#russ_image {
+		margin-left: 300px;
+	}
+
+	.text_container {
+		display: block;
+		margin: 10px 20px;
+	}
+
+	.textbox {
+		width: 500px;
+	}
+
+	#rsvp iframe {
+		width: 500px;
+	}
+
+	.textbox_mid, .textbox_right {
+		margin: 10px;
+		width: 270px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.navigation {
+		height: 50px;
+	}
+
+	#topnav li a { 
+	  font-size: 1em;
+	  line-height: 50px;
+	}
+
+	.container {
+		padding: 40px 0;
+	}
+
+	#rsvp iframe {
+		width: 450px;
+	}
+
+	.textbox {
+		width: 400px;
+	}
+
+	.textbox_mid, .textbox_right {
+		float: left;
+	}
+
+	.img_container {
+		display: none;
+	}
+}  
+
+@media screen and (max-width: 600px) {
+	#topnav {
+		display: inline-block;
+	}
+
+	#topnav { 
+  		height: auto;
+  	}
+  	#topnav ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	#topnav li {
+  		width: 30%;
+  		margin: 2px 8px;
+  		float: left;
+  		position: relative;
+  	}
+  	#topnav li a {
+		font-size: 1em;
+		line-height: 20px;
+	}
+  	#topnav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+}
+
+@media only screen and (max-width: 568px) {
+	/*#topnav li a {
+		font-size: .8em;
+	}*/
+
+	#rsvp iframe {
+		width: 400px;
+	}
+
+	#where_when iframe {
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 533px) {
+
+	/*#topnav li a{
+		margin: 5px;
+		line-height: 20px;
+	}*/
+
+	#rsvp iframe {
+		width: 350px;
+	}
+
+	.textbox {
+		width: 350px;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	#topnav {
+		border-bottom: 0;
+	}
+	#topnav ul {
+		display: none;
+		height: auto;
+	}
+
+	#topnav li {
+		width: 100px;
+		margin: 0 15px 0 0;
+	}
+
+	#topnav li a {
+		font-size: .8em;
+		line-height: 20px;
+	}
+
+	.navigation a#pull {
+		display: block;
+		background-color: rgba(32, 138, 77, 0.5);
+		width: 100%;
+		position: relative;
+		color: black;
+		font-family: 'Kameron', serif;
+	}
+	.navigation a#pull:after {
+		content:"";
+		background: url('../img/menu-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.container, .text_container, .textbox_title, .textbox_left, .textbox_mid, .textbox_right {
+		margin: 0;
+		padding: 0;
+	}
+
+	.textbox {
+		width: 290px;
+	}
+
+	#where_when iframe {
+		display: none;
+	}
+
+
+	.img_container img, .text_container img, .image_small img {
+	  border: 5px solid #BDC3C7;
+	  width: 280px;
+	}
+}

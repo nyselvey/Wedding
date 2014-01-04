@@ -1,0 +1,128 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Natasha and Russell's Wedding Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/device-styles.css">
+        <link rel="icon" href="img/favicon.png">
+
+        <style type="text/css">
+      * { padding:0; margin:0; }
+      #fullpage { bbackground-image: url(../images/lightpaperfibers-trans.png); height:100%; width:100%; }
+    </style>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        var height = getViewportHeight();
+
+        if(height > 0)
+          document.getElementById("fullpage").style.height = height + "px";
+      }
+
+      function getViewportHeight() {
+        var h = 0;
+
+        if(self.innerHeight)
+          h = window.innerHeight;
+        else if(document.documentElement && document.documentElement.clientHeight)
+          h = document.documentElement.clientHeight;
+        else if(document.body) 
+          h = document.body.clientHeight;
+
+        return h;
+      }
+    </script>
+
+    <script>
+     $(function() {  
+      var pull        = $('#pull');  
+          menu        = $('.navigation ul');  
+          menuHeight  = menu.height();  
+    
+      $(pull).on('click', function(e) {  
+          e.preventDefault();  
+          menu.slideToggle();  
+      });  
+  });
+   </script>
+  <script>
+
+     $(window).resize(function(){  
+      var w = $(window).width();  
+      if(w > 320 && menu.is(':hidden')) {  
+          menu.removeAttr('style');  
+      }  
+  });
+   </script>
+  
+    <!-- [if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <! [endif] -->
+</head>
+
+<body>
+
+<!-- ///////////////// Navigation /////////////////// -->
+
+  <div class="navigation">
+    <ul id="topnav" class="clearfix">
+        <li><a href="about.html">about us</a></li>
+        <li><a href="wedding.html">wedding details</a></li>
+        <li><a href="guest-info.html">guest info</a></li>
+        <li><a href="registry.html">our registries</a></li>
+        <li><a href="rsvp.html">rsvp</a></li>
+        <li><a href="contact.html">contact us</a></li>
+      </ul>
+      <a href="#" id="pull">Menu</a>
+  </div><!-- navigation -->
+
+<!-- ///////////////// End Navigation /////////////////// -->
+
+ 
+<!-- ///////////////// Image  /////////////////// --> 
+   
+   <div id="img_weddingpage">
+      <img src="img/Selvey-Haering-206.JPG" alt="Natasha and Russell">
+    </div><!-- img_weddingpage-->
+
+<!-- ///////////////// End Image  /////////////////// -->
+ <div class="container">
+
+<!-- ///////////////// Gifts /////////////////// -->
+    <div id="contact" class="border">
+
+      <div class="text_container">
+
+      <div class="textbox">
+        <h1>OUR CONTACT INFO</h1>
+      </div><!-- textbox -->
+
+      <div class="textbox">
+        <p>If you need help with travel arrangements, housing, or you just have a few questions, please let us know!<br><br>
+        
+        Natasha: <a href="mailto:nyselvey@gmail.com">nyselvey@gmail.com</a><br>
+        
+        Russell: <a href="mailto:russellhaering@gmail.com">russellhaering@gmail.com</a><p>
+      </div><!-- textbox -->
+
+    </div><!-- text_container -->
+  </div><!--contact border -->
+
+<!-- ///////////////// End Gifts /////////////////// -->
+
+<!--<script type="text/javascript">
+$(document).ready(function(){
+  $('#topnav').onePageNav({
+    currentClass: 'current',
+      scrollOffset: 150
+  });
+});
+</script>-->
+  </div> <!-- container -->
+</body>
+</html>
